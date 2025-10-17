@@ -1,7 +1,7 @@
 pkgname=qt6-qtwebsockets
-pkgver=6.9.2
-pkgrel=1
-pkgdesc=""
+pkgver=6.10.0
+pkgrel=2
+pkgdesc="Provides WebSocket communication compliant with RFC 6455"
 arch=('x86_64')
 url="https://www.qt.io"
 license=(
@@ -22,7 +22,7 @@ makedepends=(
     'qt6-qtdeclarative'
 )
 source=(git+https://code.qt.io/qt/${pkgname#*-}#tag=v${pkgver})
-sha256sums=(f610035da991b577c9e771c454a16d762dc344f13b2059b54dcf034cc5dc733c)
+sha256sums=(ebba8fd439961c62cb3e0718b232e0497e708489b73ed75cae75ceb98259e110)
 
 build() {
     cd ${pkgname#*-}
